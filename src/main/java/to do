@@ -1,0 +1,30 @@
+1) in the Runner class, make the "askUserForAction" a static method
+outside of the main method
+DONE
+
+2) do a loop (while?) within the main method which calls the 
+askUserForAction method, so the user can keep adding or printing
+DONE
+
+3) when adding a new equity, ask how many cashflows to add (in class Runner, method addNewEquity)
+e.g. none to X, then implement the code to allow adding X cashflows
+DONE
+
+4) make the cashflows print prettier
+DONE
+
+5) make this a standalone exe
+
+6) add user option to remove an Equity
+DONE
+
+7) add an option to edit a cashflow
+
+8) connect code to github
+
+9) suss folder structure e.g. java files and class files in different structure
+
+bug) can enter more than one cashflow in the same month, so limit it to just one
+
+10) add current position and current price to each equity
+DONE

@@ -1,0 +1,25 @@
+HOW MAKE STANDALONE EXE
+To make a runnable jar file, you also need to create a Manifest File (MANIFEST.MF). For example:
+
+Manifest-Version: 1.0
+Main-Class: JarExample
+
+//note that you have to hit return after "JarExample" ie have a blank line
+
+Place the compiled output class files (JarExample.class,JarExample$1.class) and the manifest file
+in the same folder. In the command prompt, go to the folder where your files placed, and create
+the jar using jar command. For example (if you name your manifest file as jexample.mf)
+
+jar cfm jarexample.jar jexample.mf *.class
+
+It will create executable jarexample.jar.
+
+With the standard jar file, you have to specify the class with the main method on the command line
+when running the jar. With a runnable jar, there is a manifest file that will hold that information 
+so you can just type
+
+java -jar myRunnable.jar, or simply double click it.
+
+
+FOLDER STRUCTURE FOR JAVA FILES AND COMPILED CLASS FILES
+Note - don't want to share java files, just the class files
